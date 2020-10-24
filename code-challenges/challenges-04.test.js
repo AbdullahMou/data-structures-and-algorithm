@@ -43,13 +43,9 @@ For example:
 
 const isNum = (input) => {
     // Solution code here...
-    let reg = /[0-9]/;
-    if (input.match(reg)) {
-        return true;
-    } else {
-        return false;
-    }
-    return input;
+
+    let regex = /[0-9]/gm;
+    return regex.test(input)
 };
 
 /* ------------------------------------------------------------------------------------------------
